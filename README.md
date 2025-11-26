@@ -1,5 +1,6 @@
 📝 TypeScript Quick Notes
-1️⃣ Primitive Types
+
+1. Primitive Types
 ```ts
 string, number, boolean, bigint, symbol, undefined, null
 ```
@@ -11,14 +12,14 @@ let age: number = 22;
 let married: boolean = false;
 ```
 
-2️⃣ Nullable Type
+2. Nullable Type
 
 Variable null বা value নিতে পারে
 ```ts
 let userName: string | null = null;
 userName = "Nishan";
 ```
-3️⃣ Unknown
+3. Unknown
 
 Safe version of any
 
@@ -29,7 +30,7 @@ if (typeof value === "number") {
   console.log(value + 5);
 }
 ```
-4️⃣ Never
+4. Never
 
 Function কখনো return না করলে / error throw করলে
 ```ts
@@ -37,7 +38,7 @@ function throwError(msg: string): never {
   throw new Error(msg);
 }
 ```
-5️⃣ Ternary / Nullish / Optional Chaining
+5. Ternary / Nullish / Optional Chaining
 ```ts
 Ternary (?:) → condition ? true : false
 
@@ -54,14 +55,14 @@ console.log(name ?? "Guest"); // Guest
 const person = { address: { city: "Dhaka" } };
 console.log(person.address?.city); // Dhaka
 ```
-6️⃣ Type Alias
+6. Type Alias
 
 Custom type declaration, reusable
 ```ts
 type ID = string | number;
 type User = { name: string; age: number; email?: string };
 ```
-7️⃣ Union Type (|)
+7. Union Type (|)
 
 Variable একাধিক type নিতে পারে
 ```ts
@@ -69,7 +70,7 @@ let value: string | number;
 value = 10;
 value = "Hello";
 ```
-8️⃣ Intersection Type (&)
+8. Intersection Type (&)
 
 Combine multiple object types
 ```ts
@@ -79,7 +80,7 @@ type Staff = Person & Employee;
 
 const staff: Staff = { name: "Nishan", empId: 101 };
 ```
-9️⃣ Array & Spread / Rest
+9. Array & Spread / Rest
 
 Spread ... → elements ছড়িয়ে দেওয়া
 
@@ -91,7 +92,7 @@ const all = [...arr1, ...arr2]; // [1,2,3,4]
 
 const [first, ...rest] = all;
 ```
-🔟 Class
+10. Class
 
 OOP in TypeScript
 ```ts
@@ -102,7 +103,7 @@ class Person {
 const p = new Person("Nishan", 22);
 p.greet();
 ```
-1️⃣1️⃣ Object
+11. Object
 
 Type annotation for properties
 ```ts
