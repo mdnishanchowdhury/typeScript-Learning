@@ -13,5 +13,5 @@ const user: {
     bsc: "cse",
     scl:"Alalapur high school"
 }
-user.firstName = "Md Nishan"
+user.firstName = "Md Nishan";
 console.log(user);
